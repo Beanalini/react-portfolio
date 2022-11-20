@@ -1,13 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+html {
+
+  height: 100vh;
+
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  
+  font-family:'Roboto', sans-serif;
+  background-color:#1F3330;
+  color:aliceblue;
+ min-height:100vh;
+ width: 100%;
+ 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  height:100%;
+  width:80%;
 }
+
+.nav-link {
+  color: aliceblue;
+}
+
+
+
+

@@ -1,0 +1,31 @@
+.project-card {
+    width: 325px;
+    height: 300px;
+   background-size: cover;
+    background-position:center;
+    position: relative;
+    border-radius: 10px;
+}
+
+.debra-body {
+    width: 200px;
+    height: 300px;
+    
+   
+}
+
+.info {
+background-color:white;
+ 
+ opacity: 0.75;
+ width:200px;
+ height:90px;
+ border-radius: 5%;
+ 
+  
+}
+.project-title {
+    font-size: 16px;
+    color:black;  
+
+}
