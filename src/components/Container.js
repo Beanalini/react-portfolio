@@ -11,7 +11,7 @@ import './container.css'
 
 export default function Container() {
 
-    const [currentPage, setCurrentPage] = useState('Home');
+    const [currentPage, setCurrentPage] = useState('About Me');
 
     const renderPage = () => {
         if (currentPage === 'About Me') {

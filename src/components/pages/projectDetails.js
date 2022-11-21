@@ -30,17 +30,26 @@ export const projectDetails = [
         title: "JATE",
         img: "https://i.ibb.co/yB3Q6X9/jate.png",
         alt: "Just Another Text Editor",
-        url: " ",
-        repo: "",
+        url: "https://guarded-gorge-02512.herokuapp.com/",
+        repo: "https://github.com/Beanalini/text-editor-PWA",
         tech: " ",
-        details: " "        
+        details: "Single page text editor that meets PWA criteria "        
     }, 
     {
         title: "MovieTails",
         img: "https://i.ibb.co/bb7j5xG/Movietails.png",
         alt: "Movie and Cocktail pairing App ",
-        url: " ",
-        repo: "",
+        url: "https://munnos.github.io/Movietails/",
+        repo: "https://github.com/munnos/Movietails",
+        tech: " ",
+        details: "Film and cocktail pairing suggestions based on a selected film genre using third party APIs"        
+    },
+    {
+        title: "Social Networking API",
+        img: "https://i.ibb.co/DbFWQ1p/get-all-users.png",
+        alt: " ",
+        url: "https://watch.screencastify.com/v/tR6l0OqAMlvmxY5iqGwf",
+        repo: "https://github.com/Beanalini/socialNetworkingAPI",
         tech: " ",
         details: " "        
     }

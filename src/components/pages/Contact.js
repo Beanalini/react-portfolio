@@ -10,8 +10,10 @@ function Form() {
   const [email, setEmail] = useState('');
   const [name, setUserName] = useState('');
   const [message, setMessage] = useState('');
-
+  //Error state message for form fields
   const [errorMessage, setErrorMessage] = useState('');
+  //Error state message for submit
+  const [submitMessage, setSubmitMessage] = useState('');
 
   const handleInputChange = (e) => {
     // Getting the value and name of the input which triggered the change
@@ -41,17 +43,18 @@ function Form() {
     // Preventing the default behavior of the form submit (which is to refresh the page)
     e.preventDefault();
     console.log(errorMessage);
-    // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
-    // if(!errorMessage) {
-    //  alert(`Hello ${userName}`);
-    // }
+    if(!email||!name||!message) {
+      setSubmitMessage('Please complete all forms fields before submitting')
+
+    }
     
     console.log(email, name, message);
     // If everything goes according to plan, we want to clear out the input after a successful registration.
     setUserName('');
     setMessage('');
     setEmail('');
-    console.log(email, name, message);
+    setSubmitMessage('');
+    
   };
   
  
@@ -60,8 +63,9 @@ function Form() {
           <div className="card m-4  w-75 align-items-center align-self-center d-flex border-0" style={{backgroundColor:"#1F3330"}}>            
             <div className="card-body" style={{backgroundColor:"#1F3330"}}>   
             <h5 className="card-title"></h5>
-                    <p className="card-text">Thank you for taking the time to look through my portfolio! If you would like further information, please message me using the contact form or hit the links below. </p>        
+                    <p className="card-text fs-5">Thank you for taking the time to look through my portfolio! If you would like further information, please message me using the form below or hit the links at the bottom of the page. </p>        
                 <form className="form input-group mt-3">
+                <label for="contact-name" class="form-label">Name</label>
                     <div className="mb-3 input-group">
                       <input
                       defaultValue={name}
@@ -72,8 +76,9 @@ function Form() {
                       className="form-control"
                     />
                     </div>
-        
+                    <label for="contact-email" class="form-label">Email address</label>
                     <div className="mb-3 input-group">
+                    
                         <input
                           defaultValue={email}
                           name="email"
@@ -83,7 +88,7 @@ function Form() {
                           className="form-control"
                         />
                     </div>
-          
+                    <label for="contact-message" class="form-label">Message</label>
                     <div className ="mb-3 input-group">
                       <textarea
                         defaultValue={message}
@@ -94,11 +99,17 @@ function Form() {
                         rows="10"
                         className="form-control"
                       />
-                      </div>        
+                      </div>
+                      <button type="button" class=" btn btn-primary" onClick={handleFormSubmit}>Submit</button>        
                  </form>
               {errorMessage && (
-                <div>
+                <div className="mt-3">
                   <p className="error-text">{errorMessage}</p>
+                </div>
+              )}
+              {submitMessage && (
+                <div className="mt-3">
+                  <p className="error-text">{submitMessage}</p>
                 </div>
               )}
           </div>

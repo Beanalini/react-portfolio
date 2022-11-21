@@ -33,11 +33,11 @@ export default function Skills() {
                 </div>
             </div>
             
-            <div className="card w-75 mt-4 d-flex border-0" style={{backgroundColor:'#1F3330'}} >
+            <div className="card w-75 mt-3 d-flex border-0" style={{backgroundColor:'#1F3330'}} >
                 <div className="card-body">
-                    <h5 className="card-title">Curriculm Vitae</h5>
+                    <h5 className="card-title">Curriculum Vitae</h5>
                     
-                    <a href="#" className="btn btn-primary">CV Download</a>
+                    <a href="#" className="btn btn-primary"> Download CV</a>
                 </div>
             </div>
 

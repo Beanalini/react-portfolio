@@ -11,7 +11,7 @@ const NavBar = ({ currentPage, pageChangeHandler }) => {
                 <ul className='nav justify-content-end'>
                     <li className='nav-item fs-3'>
 
-                        <a href="#home" onClick={() => pageChangeHandler('About Me')} 
+                        <a href="#About Me" onClick={() => pageChangeHandler('About Me')} 
                         className={currentPage === 'About Me' ? 'nav-link active':'nav-link'}>About</a>
                     </li>
                     <li className='nav-item fs-3'>
