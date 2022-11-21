@@ -18,11 +18,11 @@ const Footer = () => {
                         </a>
                         
                         {'  '}
-                        <a href="https://github.com/Beanalini" target="_blank" rel="noreferrer" title="https://github.com/Beanalini">
+                        <a href="mailto:beanalini@outlook.com" target="_blank" rel="noreferrer" title="https://github.com/Beanalini">
                             <FontAwesomeIcon icon={faEnvelope} size = "4x" />
                         </a>
                         {'  '}
-                        <a href="https://github.com/Beanalini" target="_blank" rel="noreferrer" title="https://github.com/Beanalini">
+                        <a href="https://www.linkedin.com/in/debra-constantinou-51bb81257/" target="_blank" rel="noreferrer" title="https://github.com/Beanalini">
                             <FontAwesomeIcon icon={faLinkedin} size = "4x" />
                         </a>
                      </div>
