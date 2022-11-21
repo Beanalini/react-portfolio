@@ -3,6 +3,7 @@ import NavBar from './NavBar';
 import Contact from './pages/Contact.js';
 import ProjectContainer from './pages/ProjectContainer.js';
 import Home from './pages/Home.js';
+import Skills from './Skills';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './container.css'
  
@@ -15,13 +16,18 @@ export default function Container() {
     const renderPage = () => {
         if (currentPage === 'Home') {
           return <Home />;
+        }        
+        if (currentPage === 'Projects') {
+          return <ProjectContainer />;
+        }
+        if (currentPage === 'Skills') {
+          return <Skills />;
         }
         if (currentPage === 'Contact') {
           return <Contact />;
         }
-        if (currentPage === 'Projects') {
-          return <ProjectContainer />;
-        }
+
+
       };
       
    const  pageChangeHandler = (page) => setCurrentPage(page);

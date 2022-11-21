@@ -14,17 +14,23 @@ const NavBar = ({ currentPage, pageChangeHandler }) => {
                         <a href="#home" onClick={() => pageChangeHandler('Home')} 
                         className={currentPage === 'Home' ? 'nav-link active':'nav-link'}>Home</a>
                     </li>
+                    <li className='nav-item'>
+
+                        <a href="#projects" onClick={() => pageChangeHandler('Projects')} 
+                        className={currentPage === 'Projects' ? 'nav-link active':'nav-link'}>Projects</a>
+                    </li>   
+                    <li className='nav-item'>
+
+                        <a href="#skills" onClick={() => pageChangeHandler('Skills')} 
+                        className={currentPage === 'Skills' ? 'nav-link active':'nav-link'}> Skills</a>
+                    </li>   
                     
                     <li className='nav-item'>
 
                         <a href="#contact" onClick={() => pageChangeHandler('Contact')} 
                         className={currentPage === 'Contact' ? 'nav-link active':'nav-link'}>Contact</a>
                     </li>
-                    <li className='nav-item'>
-
-                        <a href="#projects" onClick={() => pageChangeHandler('Projects')} 
-                        className={currentPage === 'Projects' ? 'nav-link active':'nav-link'}>Projects</a>
-                    </li>            
+                             
                 </ul>
             </div>
         </header>

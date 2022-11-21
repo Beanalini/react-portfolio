@@ -58,7 +58,9 @@ function Form() {
   return (
         <div className='container'>
           <div className="card m-4  w-75 align-items-center align-self-center d-flex border-0" style={{backgroundColor:"#1F3330"}}>            
-            <div className="card-body" style={{backgroundColor:"#1F3330"}}>              
+            <div className="card-body" style={{backgroundColor:"#1F3330"}}>   
+            <h5 className="card-title"></h5>
+                    <p className="card-text">Thank you for taking the time to look through my portfolio! If you would like further information, please message me using the contact form or hit the links below. </p>        
                 <form className="form input-group mt-3">
                     <div className="mb-3 input-group">
                       <input
