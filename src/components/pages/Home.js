@@ -6,14 +6,14 @@ export default function Home() {
     
     
 
-    <div className="container d-flex justify-content-center">
+    <div className="container justify-content-center">
 
-      <div className="row justify-content-around">
+      <div className="">
         <div className="col-2">
           <img src="https://i.ibb.co/kqXMrWb/profile-pic.png" alt="profile-pic" border="0" className="profile-image"></img>
         </div>
     
-        <div className="card-body col-4">    
+        <div className="container col-4">    
           <p> I am currently studying to become a full-stack web developer. </p>
 
                   <p className="card-text">I am an electronic engineer by training, having studied the subject at university up to postgraduate level. My subsequent career was as a research engineer in the automotive and intelligent transportation sectors, working and managing projects ranging from electromagnetic compatibility to automotive RADAR to telematics applications.</p>

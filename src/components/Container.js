@@ -29,7 +29,8 @@ export default function Container() {
     return (
         <div className='custom-container'>
             <NavBar currentPage={currentPage} pageChangeHandler={pageChangeHandler} />
-            <h1>{currentPage}</h1>
+            <div className="container mt-4"><h1>{currentPage}</h1> </div>
+            
             {renderPage()}
         </div>
 
