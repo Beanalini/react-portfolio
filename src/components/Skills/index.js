@@ -37,7 +37,7 @@ export default function Skills() {
                 <div className="card-body">
                     <h5 className="card-title">Curriculum Vitae</h5>
                     
-                    <a href="#" className="btn btn-primary"> Download CV</a>
+                    <a href="https://docs.google.com/document/d/1_esUYSEkdEHEZbZGdUXdyqlex5uuNcVnN1amXCfSBjE/edit?usp=sharing" className="btn btn-primary"> Download CV</a>
                 </div>
             </div>
 

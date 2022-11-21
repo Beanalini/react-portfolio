@@ -9,10 +9,10 @@ export default function About() {
     <div className="container">
 
       <div className="row space-between">
-        <div className="col-2 pt-2 mx-1" justify-content-start>
+        <div className="col-2 pt-2 mx-1">
           <img src="https://i.ibb.co/kqXMrWb/profile-pic.png" alt="profile-pic" border="0" className="profile-image"></img>
         </div>
-        <div class="w-100"></div>
+        <div className="w-100"></div>
         <div className="container col-3">    
             <p className="card-text fs-5"> A full stack web developer who relishes the challenge of learning new technologies with a tenacious approach to problem solving. Having recently completed a Full Stack web development Boot Camp at the University of Birmingham, where I learnt a number of front end and back end technologies. </p> 
 

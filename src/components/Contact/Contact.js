@@ -20,15 +20,13 @@ function Form() {
     const { target } = e;
     const inputType = target.name;
     const inputValue = target.value;
-    console.log(e);
-    console.log(e.target.name);
-    console.log(e.target.value);
-    console.log(inputType);
-    console.log(inputValue);
+    
     // Based on the input type, we set the state of either email, username, and password
     if (inputType === 'email') {     
+      console.log(email);
         const isValid = validateEmail(inputValue);
-        (!isValid)?setErrorMessage('Your email address is invalid'): setErrorMessage('');       
+        (!isValid)?setErrorMessage('Your email address is invalid'): setErrorMessage(''); 
+        setEmail(inputValue);      
 
       }else if (inputType === 'name') {
        (!inputValue.length)? setErrorMessage(`Please enter your ${inputType}.`): setErrorMessage('');
@@ -42,18 +40,27 @@ function Form() {
   const handleFormSubmit = (e) => {
     // Preventing the default behavior of the form submit (which is to refresh the page)
     e.preventDefault();
+    
+    if(!email.length) console.log("not email " +email);
+    if(!name.length) console.log("not name" + name);
+    if(!message.length) console.log("no message" +message);
     console.log(errorMessage);
-    if(!email||!name||!message) {
-      setSubmitMessage('Please complete all forms fields before submitting')
+    if((!email)||(!name)||(!message)) {
+      setSubmitMessage('Please complete all forms fields before submitting');
+
+    } else {
+      setSubmitMessage(`Thank you for your message, ${name}`);
 
     }
     
     console.log(email, name, message);
-    // If everything goes according to plan, we want to clear out the input after a successful registration.
+    
     setUserName('');
     setMessage('');
     setEmail('');
-    setSubmitMessage('');
+    //set timeout to clear submit form message
+    setTimeout(()=> {setSubmitMessage('')}, 1000);
+    //setSubmitMessage('');
     
   };
   
@@ -65,7 +72,7 @@ function Form() {
             <h5 className="card-title"></h5>
                     <p className="card-text fs-5">Thank you for taking the time to look through my portfolio! If you would like further information, please message me using the form below or hit the links at the bottom of the page. </p>        
                 <form className="form input-group mt-3">
-                <label for="contact-name" class="form-label">Name</label>
+                <label htmlFor="contact-name" class="form-label">Name</label>
                     <div className="mb-3 input-group">
                       <input
                       defaultValue={name}
@@ -76,19 +83,19 @@ function Form() {
                       className="form-control"
                     />
                     </div>
-                    <label for="contact-email" class="form-label">Email address</label>
+                    <label htmlFor="contact-email" class="form-label">Email address</label>
                     <div className="mb-3 input-group">
                     
                         <input
                           defaultValue={email}
                           name="email"
                           onBlur={handleInputChange}
-                          type="email"
+                          type="text"
                           placeholder="email"
                           className="form-control"
                         />
                     </div>
-                    <label for="contact-message" class="form-label">Message</label>
+                    <label htmlFor="contact-message" class="form-label">Message</label>
                     <div className ="mb-3 input-group">
                       <textarea
                         defaultValue={message}

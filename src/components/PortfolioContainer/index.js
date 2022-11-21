@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import NavBar from './NavBar';
-import Contact from './pages/Contact.js';
-import ProjectContainer from './pages/ProjectContainer.js';
-import About from './pages/About.js';
-import Skills from './Skills';
+import NavBar from '../Header/NavBar';
+import Contact from '../Contact/Contact.js';
+import ProjectContainer from '../Projects/ProjectContainer.js';
+import About from '../About/About.js';
+import Skills from '../Skills';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './container.css'
  

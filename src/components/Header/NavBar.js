@@ -1,5 +1,5 @@
 import React from 'react';
-import beanPic from '../assets/images/beanalini2.png'
+import beanPic from '../../assets/images/beanalini2.png'
 
 const NavBar = ({ currentPage, pageChangeHandler }) => {
     return (

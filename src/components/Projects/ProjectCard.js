@@ -18,7 +18,7 @@ return (
                     <FontAwesomeIcon icon={faGithub} size = "1x" />
                 </a>       
                 {' '}
-                <a href={project.repo} style={{color:'Black'}} className="card-link test" target="_blank" rel="noreferrer" title={project.repo}> 
+                <a href={project.url} style={{color:'Black'}} className="card-link test" target="_blank" rel="noreferrer" title={project.repo}> 
                     <FontAwesomeIcon icon={faLink} size = "1x" />
                 </a> 
                             
