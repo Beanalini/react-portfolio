@@ -1,5 +1,14 @@
 export const projectDetails = [
     {
+        title: "Borrow-my-Stuff",
+        img: "https://i.ibb.co/r7jhwpw/borrow-my-stuff.jpg",
+        alt: "Borrow my stuff website ",
+        url: "https://borrow-my-stuff.herokuapp.com/",
+        repo: "https://github.com/munnos/borrow-my-stuff",
+        tech: " ",
+        details: "Signup and share items or volunteer to help your neighbours "        
+    },
+    {
         title: "Tech Blog",
         img: "https://i.ibb.co/Wcw4YYf/Techblog2.png",
         alt: "Tech blog app where users can post tech related thoughts and comments",
@@ -53,5 +62,6 @@ export const projectDetails = [
         tech: " ",
         details: " "        
     }
+    
 
 ]
