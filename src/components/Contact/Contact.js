@@ -21,10 +21,10 @@ function Form() {
 
     emailjs
       .sendForm(
-        "service_jhc86xq",
-        "template_n0stj4j",
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
         form.current,
-        "5VAEcA8NIjaS9liyw"
+        process.env.REACT_APP_USER_ID
       )
       .then(
         () => {         

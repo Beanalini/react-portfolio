@@ -6,7 +6,7 @@ const NavBar = ({ currentPage, pageChangeHandler }) => {
         <header className="custom-header navbar">
             <div className="container-fluid">
             
-                <img className="navbar-brand p-2" src={beanPic} alt="logo" class="logo"/>
+                <img className="navbar-brand p-2 logo" src={beanPic} alt="logo"/>
                 <h1>Debra Constantinou</h1>
                 <ul className='nav justify-content-end'>
                     <li className='nav-item fs-3'>
